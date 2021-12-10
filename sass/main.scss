@@ -1,0 +1,17 @@
+
+@import "components/button";
+
+
+body, ul{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: aqua;
+    display: flex;
+
+    figure {
+        background-color: black;
+    }
+}
