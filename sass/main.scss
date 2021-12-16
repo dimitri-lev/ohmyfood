@@ -1,17 +1,15 @@
+@import "utils/variables";
+@import "utils/functions";
+@import "utils/mixins";
 
-@import "components/button";
+@import "base/base";
+@import "base/typography";
 
+@import "components/buttons";
 
-body, ul{
-    margin: 0;
-    padding: 0;
-}
+@import "layout/header";
+@import "layout/container";
+@import "layout/footer";
 
-header {
-    background-color: aqua;
-    display: flex;
-
-    figure {
-        background-color: black;
-    }
-}
+@import "pages/accueil";
+@import "pages/menu";

@@ -1,18 +1,261 @@
-button {
-  background-color: brown;
+* {
+  box-sizing: border-box;
 }
 
-body, ul {
+body {
+  width: 500px;
+  margin-right: auto;
+  margin-left: auto;
+}
+body ul {
   margin: 0;
   padding: 0;
 }
+body ul li {
+  list-style-type: none;
+}
+
+img {
+  width: 200px;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: roboto, sans-serif;
+}
+
+.btn {
+  border-radius: 30px;
+  background-color: #bd64db;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  border: none;
+}
+.btn p {
+  margin: 10px;
+  color: white;
+}
+.btn__commander {
+  border-radius: 30px;
+  margin-left: 160px;
+  background-color: #bd64db;
+  border: none;
+  margin-bottom: 40px;
+  padding-right: 50px;
+  padding-left: 50px;
+}
 
 header {
-  background-color: aqua;
   display: flex;
+  justify-content: center;
 }
-header figure {
-  background-color: black;
+header .fa-arrow-left {
+  padding-top: 25px;
+}
+
+footer {
+  background-color: #353535;
+  padding-top: 5px;
+  padding-bottom: 30px;
+  padding-left: 50px;
+  text-align: left;
+}
+footer a {
+  color: white;
+}
+footer li {
+  padding-bottom: 8px;
+}
+footer li:nth-child(1) i {
+  margin-right: 10px;
+}
+footer li:nth-child(2) i {
+  margin-right: 5px;
+}
+
+.reserver {
+  background-color: #f6f6f6;
+}
+.reserver .lieu {
+  display: flex;
+  justify-content: center;
+  background-color: #eaeaea;
+}
+.reserver .marker {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.explorer h1 {
+  margin-right: 130px;
+  margin-left: 130px;
+  font-size: 20px;
+  text-align: center;
+}
+.explorer h2 {
+  margin-right: 80px;
+  margin-left: 80px;
+  font-size: 16px;
+  font-weight: 100;
+  text-align: center;
+}
+.explorer .btn {
+  margin-left: 160px;
+}
+
+.fonctionnement h2 {
+  text-align: left;
+  margin-left: 50px;
+  font-size: 18px;
+  color: black;
+}
+.fonctionnement ul .explication {
+  background: #f6f6f6;
+  border-radius: 30px;
+  width: 400px;
+  height: 50px;
+  margin-bottom: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+}
+.fonctionnement ul .explication p {
+  border: 0px solid black;
+  border-radius: 100%;
+  padding: 1px 4px 1px 4px;
+  margin-right: 10px;
+  background-color: blueviolet;
+  position: absolute;
+  color: white;
+}
+.fonctionnement ul .explication i {
+  margin-right: 20px;
+  padding-top: 20px;
+  margin-left: 40px;
+}
+.fonctionnement ul .violet {
+  background-color: #f5edff;
+}
+
+.restaurants {
+  background-color: #f6f6f6;
+  margin-bottom: 0px;
+}
+.restaurants h2 {
+  color: black;
+  text-align: left;
+  margin-left: 50px;
+  font-size: 18px;
+  padding-top: 30px;
+}
+.restaurants .container .card {
+  border: 0px solid black;
+  border-radius: 30px;
+  background-color: white;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 20px;
+  height: 200px;
+}
+.restaurants .container .card a {
+  width: 100%;
+  height: 100%;
+}
+.restaurants .container .card figure {
+  height: 70%;
+  margin: 0px;
+  overflow: hidden;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  position: relative;
+}
+.restaurants .container .card figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.restaurants .container .card figure p {
+  background-color: greenyellow;
+  position: absolute;
+  top: 0px;
+  right: 5px;
+}
+.restaurants .container .card .text_card {
+  text-align: left;
+  font-size: 14px;
+  position: relative;
+}
+.restaurants .container .card .text_card h3 {
+  margin: 0;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+.restaurants .container .card .text_card p {
+  margin: 0;
+  margin-left: 10px;
+}
+.restaurants .container .card .text_card .fa-heart {
+  position: absolute;
+  right: 2px;
+  top: 2px;
+  z-index: 1;
+}
+.restaurants .container .card .text_card .fa-hand-pointer {
+  position: absolute;
+  right: 2px;
+  top: 7px;
+  z-index: 2;
+}
+.restaurants .container .card .text_card__titre {
+  display: flex;
+  margin-bottom: 2px;
+}
+
+.menu img {
+  width: 100%;
+}
+.menu .plat {
+  background-color: #f6f6f6;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+}
+.menu .plat__titre {
+  margin-left: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.menu .plat__titre i {
+  padding-right: 20px;
+  padding-top: 20px;
+}
+.menu .plat__menu h2 {
+  margin-left: 25px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.menu .plat__menu__card {
+  background-color: white;
+  border-radius: 30px;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 15px;
+}
+.menu .plat__menu__card li {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.menu .plat__menu__card li h3 {
+  margin: 0;
+}
+.menu .plat__menu__card .prix {
+  display: flex;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=style.css.map */

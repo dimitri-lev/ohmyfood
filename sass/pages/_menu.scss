@@ -1,0 +1,45 @@
+.menu {
+    img {
+        width: 100%;
+    }
+    .plat {
+        background-color: #f6f6f6;
+        border-top-right-radius: 30px;
+        border-top-left-radius: 30px;
+        &__titre {
+            margin-left: 30px;
+            display: flex;
+            justify-content: space-between;
+            i {
+                padding-right: 20px;
+                padding-top: 20px;
+            }
+        }
+        &__menu {
+            h2 {
+                margin-left: 25px;
+                font-size: 18px;
+                text-transform: uppercase;
+            }
+            &__card {
+                background-color: white;
+                border-radius: 30px;
+                width: 90%;
+                margin-right: auto;
+                margin-left: auto;
+                margin-bottom: 15px;
+                li {
+                    margin-right: 20px;
+                    margin-left: 20px;
+                    h3 {
+                        margin: 0;
+                    }
+                }
+                .prix {
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
+}

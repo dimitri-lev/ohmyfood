@@ -1,0 +1,19 @@
+footer {
+    background-color: #353535;
+    padding-top: 5px;
+    padding-bottom: 30px;
+    padding-left: 50px;
+    text-align: left;
+    a {
+        color: white;
+    }
+    li {
+        padding-bottom: 8px;
+        &:nth-child(1) i{
+            margin-right: 10px;
+        }
+        &:nth-child(2) i{
+            margin-right: 5px;
+        }
+    }
+}
