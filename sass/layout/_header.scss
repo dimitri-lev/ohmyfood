@@ -1,7 +1,11 @@
-header {
-    display: flex;
-    justify-content: center;
-    .fa-arrow-left {
-        padding-top: 25px;
+header figure {
+    text-align: center;
+    img {
+        margin-top: 20px;
+        width: 220px;
     }
+}
+
+header fa-arrow-left {
+    padding-top: 25px;
 }

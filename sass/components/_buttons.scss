@@ -1,12 +1,16 @@
 .btn {
+    width: 200px;
+    height: 50px;
+    background: linear-gradient(170deg, $color_secondary, $color_primary);
+    border: none;
     border-radius: 30px;
-    background-color: #bd64db;
+    color: white;
     margin-top: 20px;
     margin-bottom: 40px;
-    border: none;
+    margin-right: auto;
+    margin-left: auto;
     p {
         margin: 10px;
-        color: white;
     }
     &__commander {
         border-radius: 30px;

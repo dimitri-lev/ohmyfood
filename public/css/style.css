@@ -3,7 +3,8 @@
 }
 
 body {
-  width: 500px;
+  width: 576px;
+  margin: 0;
   margin-right: auto;
   margin-left: auto;
 }
@@ -15,12 +16,9 @@ body ul li {
   list-style-type: none;
 }
 
-img {
-  width: 200px;
-}
-
 a {
   text-decoration: none;
+  color: black;
 }
 
 body {
@@ -28,15 +26,19 @@ body {
 }
 
 .btn {
+  width: 200px;
+  height: 50px;
+  background: linear-gradient(170deg, #FF79DA, #9356DC);
+  border: none;
   border-radius: 30px;
-  background-color: #bd64db;
+  color: white;
   margin-top: 20px;
   margin-bottom: 40px;
-  border: none;
+  margin-right: auto;
+  margin-left: auto;
 }
 .btn p {
   margin: 10px;
-  color: white;
 }
 .btn__commander {
   border-radius: 30px;
@@ -48,11 +50,15 @@ body {
   padding-left: 50px;
 }
 
-header {
-  display: flex;
-  justify-content: center;
+header figure {
+  text-align: center;
 }
-header .fa-arrow-left {
+header figure img {
+  margin-top: 20px;
+  width: 220px;
+}
+
+header fa-arrow-left {
   padding-top: 25px;
 }
 
@@ -76,35 +82,51 @@ footer li:nth-child(2) i {
   margin-right: 5px;
 }
 
-.reserver {
-  background-color: #f6f6f6;
+.lieu {
+  display: flex;
+  flex-direction: column;
 }
-.reserver .lieu {
+.lieu div {
+  height: 6px;
+  background: linear-gradient(#cecece, #eaeaea);
+}
+.lieu p {
+  background-color: #eaeaea;
+  height: 50px;
+  width: 100%;
   display: flex;
   justify-content: center;
-  background-color: #eaeaea;
-}
-.reserver .marker {
-  display: flex;
   align-items: center;
-  margin-right: 10px;
+  margin: 0;
+}
+.lieu span {
+  position: relative;
+  font-size: 20px;
+}
+.lieu .fa-map-marker-alt {
+  position: absolute;
+  margin-right: 200px;
+  margin-bottom: 2px;
 }
 
-.explorer h1 {
-  margin-right: 130px;
-  margin-left: 130px;
-  font-size: 20px;
+.reserver {
+  display: flex;
+  flex-direction: column;
+  background-color: #f6f6f6;
+}
+.reserver h1 {
+  margin-right: 140px;
+  margin-left: 140px;
+  font-size: 26px;
   text-align: center;
 }
-.explorer h2 {
-  margin-right: 80px;
-  margin-left: 80px;
-  font-size: 16px;
+.reserver h2 {
+  margin-right: 50px;
+  margin-left: 50px;
+  margin-top: 0;
+  font-size: 22px;
   font-weight: 100;
   text-align: center;
-}
-.explorer .btn {
-  margin-left: 160px;
 }
 
 .fonctionnement h2 {
@@ -113,7 +135,7 @@ footer li:nth-child(2) i {
   font-size: 18px;
   color: black;
 }
-.fonctionnement ul .explication {
+.fonctionnement li {
   background: #f6f6f6;
   border-radius: 30px;
   width: 400px;
@@ -123,7 +145,7 @@ footer li:nth-child(2) i {
   margin-left: auto;
   position: relative;
 }
-.fonctionnement ul .explication p {
+.fonctionnement p {
   border: 0px solid black;
   border-radius: 100%;
   padding: 1px 4px 1px 4px;
@@ -132,12 +154,12 @@ footer li:nth-child(2) i {
   position: absolute;
   color: white;
 }
-.fonctionnement ul .explication i {
+.fonctionnement i {
   margin-right: 20px;
   padding-top: 20px;
   margin-left: 40px;
 }
-.fonctionnement ul .violet {
+.fonctionnement .violet {
   background-color: #f5edff;
 }
 
@@ -152,7 +174,8 @@ footer li:nth-child(2) i {
   font-size: 18px;
   padding-top: 30px;
 }
-.restaurants .container .card {
+
+.card {
   border: 0px solid black;
   border-radius: 30px;
   background-color: white;
@@ -162,11 +185,11 @@ footer li:nth-child(2) i {
   margin-bottom: 20px;
   height: 200px;
 }
-.restaurants .container .card a {
+.card a {
   width: 100%;
   height: 100%;
 }
-.restaurants .container .card figure {
+.card figure {
   height: 70%;
   margin: 0px;
   overflow: hidden;
@@ -174,44 +197,44 @@ footer li:nth-child(2) i {
   border-top-left-radius: 30px;
   position: relative;
 }
-.restaurants .container .card figure img {
+.card figure img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.restaurants .container .card figure p {
+.card figure p {
   background-color: greenyellow;
   position: absolute;
   top: 0px;
   right: 5px;
 }
-.restaurants .container .card .text_card {
+.card .text_card {
   text-align: left;
   font-size: 14px;
   position: relative;
 }
-.restaurants .container .card .text_card h3 {
+.card .text_card h3 {
   margin: 0;
   margin-top: 5px;
   margin-left: 10px;
 }
-.restaurants .container .card .text_card p {
+.card .text_card p {
   margin: 0;
   margin-left: 10px;
 }
-.restaurants .container .card .text_card .fa-heart {
+.card .text_card .fa-heart {
   position: absolute;
   right: 2px;
   top: 2px;
   z-index: 1;
 }
-.restaurants .container .card .text_card .fa-hand-pointer {
+.card .text_card .fa-hand-pointer {
   position: absolute;
   right: 2px;
   top: 7px;
   z-index: 2;
 }
-.restaurants .container .card .text_card__titre {
+.card .text_card__titre {
   display: flex;
   margin-bottom: 2px;
 }
