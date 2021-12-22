@@ -7,7 +7,7 @@
     }
     p {
         background-color: #eaeaea;
-        height: 50px;
+        height: 60px;
         width: 100%;
         display: flex;
         justify-content: center;
@@ -16,7 +16,7 @@
     }
     span {
         position: relative;
-        font-size: 20px;
+        font-size: 22px;
     }
     .fa-map-marker-alt{
         position: absolute;
@@ -30,78 +30,92 @@
     flex-direction: column;
     background-color: #f6f6f6; 
     h1 {
-        margin-right: 140px;
-        margin-left: 140px;
-        font-size: 26px;
+        margin-top: 50px;
+        margin-right: 120px;
+        margin-left: 120px;
+        font-size: 32px;
         text-align: center;
     }
     h2 {
-        margin-right: 50px;
-        margin-left: 50px;
+        margin-right: 65px;
+        margin-left: 65px;
         margin-top: 0;
-        font-size: 22px;
-        font-weight: 100;
+        font-size: 26px;
+        font-weight: 300;
         text-align: center;
     }
 }
 
 .fonctionnement {
+    margin-top: 60px;
+    margin-bottom: 80px;
     h2 {
-        text-align: left;
-        margin-left: 50px;
-        font-size: 18px;
+        margin-left: 30px;
+        font-size: 30px;
         color: black;
     }
-    li{
+    &__card{
+        display: flex;
+        align-items: center;
         background: #f6f6f6;
-        border-radius: 30px;
-        width: 400px;
-        height: 50px;
-        margin-bottom: 15px;
+        border-radius: 15px;
+        width: 500px;
+        height: 90px;
+        margin-bottom: 30px;
         margin-right: auto;
         margin-left: auto;
         position: relative;
+        box-shadow: 0px 9px 9px #ebebeb;
     }
-    p {
-        border: 0px solid black;
+    &__nombre {
         border-radius: 100%;
-        padding: 1px 4px 1px 4px;
-        margin-right: 10px;
-        background-color: blueviolet;
+        padding: 5px 10px 5px 10px;
+        background-color: #9356dc;
         position: absolute;
         color: white;
+        left: -10px;
     }
     i {
-        margin-right: 20px;
-        padding-top: 20px;
-        margin-left: 40px;
+        margin-right: 40px;
+        margin-left: 60px;
+        font-size: 20px;
+        color: #7e7e7e;
     }
-    .violet {
+    &__titre {
+        font-size: 24px;
+        font-weight: 600;
+    }
+    &__violet {
         background-color: #f5edff;
+        i {
+            color: #9356dc;
+        }
     }  
 }
 
 .restaurants {
+    display: flex;
+    flex-direction: column;
     background-color: #f6f6f6;
     margin-bottom: 0px;
     h2 {
+        margin-left: 30px;
+        font-size: 30px;
         color: black;
-        text-align: left;
-        margin-left: 50px;
-        font-size: 18px;
         padding-top: 30px;
     }
 }
 
-.card {
-    border: 0px solid black;
-    border-radius: 30px;
+.restaurant__card {
+    border: 0px solid transparent;
+    border-radius: 20px;
     background-color: white;
-    width: 80%;
+    width: 88%;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 20px;
-    height: 200px;
+    margin-bottom: 25px;
+    height: 360px;
+    box-shadow: 0px 9px 9px #ebebeb;
     a {
         width: 100%;
         height: 100%;
@@ -110,8 +124,8 @@
         height: 70%;
         margin: 0px;
         overflow: hidden;
-        border-top-right-radius: 30px;
-        border-top-left-radius: 30px;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
         position: relative;
         img {
             width: 100%;
@@ -119,40 +133,45 @@
             object-fit: cover;  
         }
         p {
-            background-color: greenyellow;
+            background-color: #99e2d0;
+            border-radius: 2px;
+            color: #008766;
+            padding: 10px;
+            font-size: 18px;
+            font-weight: 600;
             position: absolute;
             top: 0px;
-            right: 5px;
+            right: 15px;
         }
     }
-    .text_card {
+    .restaurant__text {
         text-align: left;
-        font-size: 14px;
+        font-size: 24px;
         position: relative;
         h3 {
+            font-weight: 700;
             margin: 0;
-            margin-top: 5px;
-            margin-left: 10px;
+            margin-top: 20px;
+            margin-bottom: 5px;
+            margin-left: 30px;
         }
         p {
             margin: 0;
-            margin-left: 10px;
+            margin-left: 30px;
         }
         .fa-heart {
             position: absolute;
-            right: 2px;
-            top: 2px;
-            z-index: 1;
+            font-size: 30px;
+            right: 30px;
+            top: 30px;
         }
-        .fa-hand-pointer {
-            position: absolute;
-            right: 2px;
-            top: 7px;
-            z-index: 2;
-        }
-        &__titre {
+        .restaurant__titre {
             display: flex;
             margin-bottom: 2px;
         }
     }
+}
+
+.restaurant__card:nth-child(4) {
+    margin-bottom: 80px;
 }

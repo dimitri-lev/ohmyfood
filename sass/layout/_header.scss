@@ -6,6 +6,13 @@ header figure {
     }
 }
 
-header fa-arrow-left {
-    padding-top: 25px;
+header {
+    position: relative;
+    .fa-arrow-left {
+        position: absolute;
+        font-size: 30px;
+        top: 24px;
+        left: 50px;
+        color: #353535;
+    }
 }

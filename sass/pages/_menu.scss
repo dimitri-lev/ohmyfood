@@ -1,45 +1,62 @@
+.image_restaurant img{
+    width: 100%;
+}
+
 .menu {
-    img {
-        width: 100%;
+    background: #f6f6f6;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    position: relative;
+    top: -60px;
+    &__titre {
+        margin-left: 30px;
+        display: flex;
+        justify-content: space-between;
+        h1 {
+            margin-top: 40px;
+            font-size: 40px;
+            font-weight: 300;
+        }
+        i {
+            font-size: 33px;
+            padding-right: 60px;
+            padding-top: 50px;
+        }
     }
-    .plat {
-        background-color: #f6f6f6;
-        border-top-right-radius: 30px;
-        border-top-left-radius: 30px;
-        &__titre {
-            margin-left: 30px;
+}
+
+.menu__plat {
+    h2 {
+        margin-left: 25px;
+        font-size: 24px;
+        text-transform: uppercase;
+        border-bottom: 3px solid green;
+    }
+    &__card {
+        background-color: white;
+        border-radius: 30px;
+        width: 90%;
+        height: 90px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 15px;
+        box-shadow: 0px 9px 9px #ebebeb;
+        h3 {
+            padding-top: 15px;
+            padding-left: 15px;
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+        .prix {
             display: flex;
             justify-content: space-between;
-            i {
-                padding-right: 20px;
-                padding-top: 20px;
-            }
+            margin-top: 8px;
+            padding-left: 15px;
+            font-size: 22px;
         }
-        &__menu {
-            h2 {
-                margin-left: 25px;
-                font-size: 18px;
-                text-transform: uppercase;
-            }
-            &__card {
-                background-color: white;
-                border-radius: 30px;
-                width: 90%;
-                margin-right: auto;
-                margin-left: auto;
-                margin-bottom: 15px;
-                li {
-                    margin-right: 20px;
-                    margin-left: 20px;
-                    h3 {
-                        margin: 0;
-                    }
-                }
-                .prix {
-                    display: flex;
-                    justify-content: space-between;
-                }
-            }
+        span {
+            padding-right: 25px;
+            font-weight: 700;
         }
     }
 }
