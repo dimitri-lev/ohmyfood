@@ -4,7 +4,7 @@
     background: linear-gradient(170deg, $color_secondary, $color_primary);
     border: none;
     border-radius: 30px;
-    box-shadow: 0px 6px 6px #c5c5c5;;
+    box-shadow: 0px 6px 6px #c5c5c5;
     color: white;
     margin-top: 20px;
     margin-bottom: 40px;
@@ -13,6 +13,10 @@
     font-size: 22px;
     padding-right: 30px;
     padding-left: 30px;
+    &:hover {
+        filter: brightness(120%);
+        box-shadow: darken($color: #c5c5c5, $amount: 0.5)
+    }
     &__commander {
         width: 300px;
         height: 65px;
@@ -22,9 +26,13 @@
         background: linear-gradient(170deg, $color_secondary, $color_primary);
         box-shadow: 0px 6px 6px #c5c5c5;;
         border: none;
-        margin-bottom: 40px;
+        margin-bottom: 80px;
         padding-right: 50px;
         padding-left: 50px;
+        &:hover {
+            filter: brightness(120%);
+            box-shadow: darken($color: #c5c5c5, $amount: 0.5)
+        }
     }
 }
 

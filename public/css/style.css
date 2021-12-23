@@ -45,6 +45,10 @@ body {
   padding-right: 30px;
   padding-left: 30px;
 }
+.btn:hover {
+  filter: brightness(120%);
+  box-shadow: #c4c4c4;
+}
 .btn__commander {
   width: 300px;
   height: 65px;
@@ -54,9 +58,13 @@ body {
   background: linear-gradient(170deg, #FF79DA, #9356DC);
   box-shadow: 0px 6px 6px #c5c5c5;
   border: none;
-  margin-bottom: 40px;
+  margin-bottom: 80px;
   padding-right: 50px;
   padding-left: 50px;
+}
+.btn__commander:hover {
+  filter: brightness(120%);
+  box-shadow: #c4c4c4;
 }
 
 .btn__menu {
@@ -280,6 +288,9 @@ footer li:nth-child(2) i {
   right: 30px;
   top: 30px;
 }
+.restaurant__card .restaurant__text .fa-heart:hover {
+  color: red;
+}
 .restaurant__card .restaurant__text .restaurant__titre {
   display: flex;
   margin-bottom: 2px;
@@ -299,6 +310,7 @@ footer li:nth-child(2) i {
   border-top-left-radius: 50px;
   position: relative;
   top: -60px;
+  height: auto;
 }
 .menu__titre {
   margin-left: 30px;
@@ -315,12 +327,24 @@ footer li:nth-child(2) i {
   padding-right: 60px;
   padding-top: 50px;
 }
+.menu__titre .fa-heart:hover {
+  color: red;
+}
 
+.menu__plat {
+  height: 400px;
+}
 .menu__plat h2 {
   margin-left: 25px;
+  margin-bottom: 10px;
   font-size: 24px;
   text-transform: uppercase;
-  border-bottom: 3px solid green;
+}
+.menu__plat .surligne {
+  height: 4px;
+  width: 60px;
+  background-color: #99E2D0;
+  margin-left: 25px;
 }
 .menu__plat__card {
   background-color: white;
@@ -348,6 +372,10 @@ footer li:nth-child(2) i {
 .menu__plat__card span {
   padding-right: 25px;
   font-weight: 700;
+}
+
+.all {
+  background: #f6f6f6;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -8,6 +8,7 @@
     border-top-left-radius: 50px;
     position: relative;
     top: -60px;
+    height: auto;
     &__titre {
         margin-left: 30px;
         display: flex;
@@ -22,15 +23,25 @@
             padding-right: 60px;
             padding-top: 50px;
         }
+        .fa-heart:hover {
+            color: red;
+        }
     }
 }
 
 .menu__plat {
+    height: 400px;
     h2 {
         margin-left: 25px;
+        margin-bottom: 10px;
         font-size: 24px;
         text-transform: uppercase;
-        border-bottom: 3px solid green;
+    }
+    .surligne {
+        height: 4px;
+        width: 60px;
+        background-color: $color_terciary;
+        margin-left: 25px;
     }
     &__card {
         background-color: white;
@@ -59,4 +70,8 @@
             font-weight: 700;
         }
     }
+}
+
+.all {
+    background: #f6f6f6;
 }

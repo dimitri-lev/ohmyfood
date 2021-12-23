@@ -3,7 +3,7 @@
     flex-direction: column;
     div {
         height: 6px;
-        background: linear-gradient(#cecece,#eaeaea) ;
+        background: linear-gradient(#cecece,#eaeaea);
     }
     p {
         background-color: #eaeaea;
@@ -164,6 +164,9 @@
             font-size: 30px;
             right: 30px;
             top: 30px;
+        }
+        .fa-heart:hover {
+            color: red;
         }
         .restaurant__titre {
             display: flex;
