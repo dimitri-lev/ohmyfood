@@ -1,0 +1,35 @@
+@keyframes spin {
+    0% {
+        visibility: visible;
+    }
+    80% {opacity: 0.5;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes spinner{
+    0%{
+        visibility: visible;
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        transform: rotate(360deg);
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+@keyframes menu {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

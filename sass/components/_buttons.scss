@@ -1,37 +1,24 @@
 .btn {
-    width: 300px;
-    height: 65px;
-    background: linear-gradient(170deg, $color_secondary, $color_primary);
-    border: none;
-    border-radius: 30px;
-    box-shadow: 0px 6px 6px #c5c5c5;
-    color: white;
+    @include button;
     margin-top: 20px;
     margin-bottom: 40px;
     margin-right: auto;
     margin-left: auto;
-    font-size: 22px;
     padding-right: 30px;
     padding-left: 30px;
     &:hover {
         filter: brightness(120%);
-        box-shadow: darken($color: #c5c5c5, $amount: 0.5)
+        box-shadow: 0px 6px 6px darken($color_btn_shadow, 20%);
     }
     &__commander {
+        @include button;
         width: 300px;
-        height: 65px;
-        color: white;
-        font-size: 22px;
-        border-radius: 30px;
-        background: linear-gradient(170deg, $color_secondary, $color_primary);
-        box-shadow: 0px 6px 6px #c5c5c5;;
-        border: none;
         margin-bottom: 80px;
         padding-right: 50px;
         padding-left: 50px;
         &:hover {
             filter: brightness(120%);
-            box-shadow: darken($color: #c5c5c5, $amount: 0.5)
+            box-shadow: darken($color: $color_btn_shadow, $amount: 0.5)
         }
     }
 }
@@ -39,5 +26,5 @@
 .btn__menu {
     display: flex;
     justify-content: center;
-    background-color: #f6f6f6;
+    background-color: $color_grey_light;
 }

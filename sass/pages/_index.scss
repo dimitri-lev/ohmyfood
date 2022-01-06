@@ -1,17 +1,41 @@
+.spinner {
+    height: 100%;
+    position: fixed;
+    margin: auto;
+    top: 0; left: 0; right: 0; bottom: 0;
+    visibility: hidden;
+    background: $color_white;
+    animation: spin 2s linear;
+    z-index: 2;
+    &__loading {
+        @include flexbox-center;
+        border: 10px solid transparent;
+        border-top: 10px solid $color-primary;
+        border-bottom: 10px solid $color-secondary;
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        position: fixed;
+        margin: auto;
+        top: 0; left: 0; right: 0; bottom: 0;
+        visibility: hidden;
+        animation: spinner 2s ease-in-out ;
+        z-index: 1;
+    }
+}
+
 .lieu {
     display: flex;
     flex-direction: column;
     div {
         height: 6px;
-        background: linear-gradient(#cecece,#eaeaea);
+        background: linear-gradient(#cecece,$color_grey_medium);
     }
     p {
-        background-color: #eaeaea;
+        background-color: $color_grey_medium;
         height: 60px;
         width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flexbox-center;
         margin: 0; 
     }
     span {
@@ -28,19 +52,19 @@
 .reserver {
     display: flex;
     flex-direction: column;
-    background-color: #f6f6f6; 
+    background-color: $color_grey_light; 
     h1 {
         margin-top: 50px;
-        margin-right: 120px;
-        margin-left: 120px;
-        font-size: 32px;
+        margin-right: 50px;
+        margin-left: 50px;
+        font-size: 28px;
         text-align: center;
     }
     h2 {
-        margin-right: 65px;
-        margin-left: 65px;
+        margin-right: 20px;
+        margin-left: 20px;
         margin-top: 0;
-        font-size: 26px;
+        font-size: 20px;
         font-weight: 300;
         text-align: center;
     }
@@ -52,27 +76,33 @@
     h2 {
         margin-left: 30px;
         font-size: 30px;
-        color: black;
+        color: $color_black;
     }
-    &__card{
+    &__card {
         display: flex;
         align-items: center;
-        background: #f6f6f6;
+        background: $color_grey_light;
         border-radius: 15px;
-        width: 500px;
+        width: 88%;
         height: 90px;
         margin-bottom: 30px;
         margin-right: auto;
         margin-left: auto;
         position: relative;
         box-shadow: 0px 9px 9px #ebebeb;
+        &:hover {
+            background-color: #f5edff;
+            i {
+                color: $color_purple;
+            }
+        }
     }
     &__nombre {
         border-radius: 100%;
         padding: 5px 10px 5px 10px;
-        background-color: #9356dc;
+        background-color: $color_purple;
         position: absolute;
-        color: white;
+        color: $color_white;
         left: -10px;
     }
     i {
@@ -85,23 +115,17 @@
         font-size: 24px;
         font-weight: 600;
     }
-    &__violet {
-        background-color: #f5edff;
-        i {
-            color: #9356dc;
-        }
-    }  
 }
 
 .restaurants {
     display: flex;
     flex-direction: column;
-    background-color: #f6f6f6;
+    background-color: $color_grey_light;
     margin-bottom: 0px;
     h2 {
         margin-left: 30px;
         font-size: 30px;
-        color: black;
+        color: $color_black;
         padding-top: 30px;
     }
 }
@@ -109,7 +133,7 @@
 .restaurant__card {
     border: 0px solid transparent;
     border-radius: 20px;
-    background-color: white;
+    background-color: $color_white;
     width: 88%;
     margin-right: auto;
     margin-left: auto;
@@ -154,27 +178,80 @@
             margin-top: 20px;
             margin-bottom: 5px;
             margin-left: 30px;
+            font-size: 24px;
         }
         p {
             margin: 0;
             margin-left: 30px;
+            font-size: 22px;
         }
-        .fa-heart {
-            position: absolute;
-            font-size: 30px;
-            right: 30px;
-            top: 30px;
+    }
+    .heart:hover {
+        .fas.fa-heart {
+            opacity: 1;
+            transition: 0.3s ease-in-out;
         }
-        .fa-heart:hover {
-            color: red;
+        .far.fa-heart {
+            opacity: 0;
+            transition: 0.3s ease-in-out;
         }
-        .restaurant__titre {
-            display: flex;
-            margin-bottom: 2px;
-        }
+    }
+    .fas.fa-heart {
+        background: linear-gradient(170deg, $color_secondary, $color_primary);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        opacity: 0;
+        position: absolute;
+        font-size: 30px;
+        right: 30px;
+        top: 30px;
+    }
+    .far.fa-heart {
+        position: absolute;
+        font-size: 30px;
+        right: 30px;
+        top: 30px;
+        opacity: 1;
+    }
+    .restaurant__titre {
+        display: flex;
+        margin-bottom: 2px;
     }
 }
 
 .restaurant__card:nth-child(4) {
     margin-bottom: 80px;
+}
+
+@media (min-width: 768px) { 
+    .restaurant__container {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .restaurant__card {
+        width: 600px;
+    }
+}
+
+@media (min-width: 992px) {
+    .restaurant__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: space-around;
+    }
+    .restaurant__card {
+        width: 500px;
+        margin: 20px;
+    }
+    footer {
+        text-align: center;
+    }
+}
+
+@media (min-width: 1440px) {
+    .restaurant__card {
+        width: 600px;
+        margin: 20px;
+    }
 }

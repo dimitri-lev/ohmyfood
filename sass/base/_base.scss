@@ -2,8 +2,7 @@
     box-sizing: border-box;
 }
 
-body {
-    width: 576px;
+body { 
     margin: 0;
     margin-right: auto;
     margin-left: auto;
@@ -18,5 +17,5 @@ body {
 
 a {
     text-decoration: none;
-    color: black;
+    color: $color_black;
 }
