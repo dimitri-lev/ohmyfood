@@ -18,7 +18,7 @@
         padding-left: 50px;
         &:hover {
             filter: brightness(120%);
-            box-shadow: darken($color: $color_btn_shadow, $amount: 0.5)
+            box-shadow: 0px 6px 6px darken($color: $color_btn_shadow, $amount: 0.5)
         }
     }
 }

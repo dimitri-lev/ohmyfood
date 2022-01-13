@@ -1,5 +1,5 @@
 .image_restaurant img{
-    height: 400px;
+    height: 340px;
     width: 100%;
     object-fit: cover;
 }
@@ -10,7 +10,7 @@
     border-top-left-radius: 50px;
     margin-top: -60px;
     position: relative;
-    padding-bottom: 60px;
+    padding-bottom: 40px;
     &__titre {
         margin-left: 30px;
         display: flex;
@@ -48,22 +48,25 @@
         top: 45px;
         opacity: 1;
     }
-}
-
-.menu__plat {
     h2 {
         margin-left: 25px;
         margin-bottom: 10px;
         font-size: 18px;
         text-transform: uppercase;
+        display: flex;
+        flex-direction: column;
+        &::after {
+            content: '';
+            height: 3px;
+            width: 40px;
+            background-color: $color_terciary;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
     }
-    .surligne {
-        height: 4px;
-        width: 60px;
-        background-color: $color_terciary;
-        margin-left: 25px;
-        margin-bottom: 20px;
-    }
+}
+
+.menu__plat {
     h3 {
         padding-top: 0px;
         padding-left: 15px;
@@ -73,8 +76,9 @@
     }
     &--card {
         background-color: $color_white;
-        border-radius: 30px;
+        border-radius: 20px;
         width: 90%;
+        max-width: 800px;
         height: 80px;
         margin-right: auto;
         margin-left: auto;
@@ -123,8 +127,8 @@
             background-color: #99e2d0;
             top: 0; right: 0; bottom: 0;
             width: 60px;
-            border-top-right-radius: 30px;
-            border-bottom-right-radius: 30px;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
             transform: translateX(60px);
             overflow: hidden;
         }
@@ -154,12 +158,23 @@
     }
 }
 
-@media (min-width: 768px) { 
-
+@media (max-width: 360px) {
+    .menu__titre .far.fa-heart, .menu__titre .fas.fa-heart{
+        top: 80px;
+    }
 }
 
 @media (min-width: 992px) {
     footer {
         text-align: center;
+    }
+}
+
+@media (min-width: 1200px) {
+    .menu__titre {
+        justify-content: center;
+    }
+    .menu h2 {
+        margin-left: 280px;
     }
 }
