@@ -96,7 +96,7 @@ body {
 }
 .btn__commander:hover {
   filter: brightness(120%);
-  box-shadow: 0px 6px 6px #c4c4c4;
+  box-shadow: 0px 6px 6px #929292;
 }
 
 .btn__menu {
@@ -589,6 +589,10 @@ footer li:nth-child(2) i {
   }
 }
 @media (min-width: 992px) {
+  .image_restaurant img {
+    height: 400px;
+  }
+
   footer {
     text-align: center;
   }

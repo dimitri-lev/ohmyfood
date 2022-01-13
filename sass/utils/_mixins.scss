@@ -4,6 +4,11 @@
     align-items: center;
 }
 
+@mixin boxshadow {
+    filter: brightness(120%);
+    box-shadow: 0px 6px 6px darken($color_btn_shadow, 20%);
+}
+
 @mixin button {
     height: 65px;
     color: $color_white;

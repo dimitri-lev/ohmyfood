@@ -7,8 +7,7 @@
     padding-right: 30px;
     padding-left: 30px;
     &:hover {
-        filter: brightness(120%);
-        box-shadow: 0px 6px 6px darken($color_btn_shadow, 20%);
+        @include boxshadow;
     }
     &__commander {
         @include button;
@@ -17,8 +16,7 @@
         padding-right: 50px;
         padding-left: 50px;
         &:hover {
-            filter: brightness(120%);
-            box-shadow: 0px 6px 6px darken($color: $color_btn_shadow, $amount: 0.5)
+            @include boxshadow;
         }
     }
 }
