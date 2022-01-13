@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
+body { 
+    margin: 0;
+    margin-right: auto;
+    margin-left: auto;
+    ul{
+        margin: 0;
+        padding: 0;
+        li {
+            list-style-type: none;
+        }
+    }
+}
+
+a {
+    text-decoration: none;
+    color: $color_black;
+}

@@ -1,0 +1,27 @@
+@mixin flexbox-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin box-shadow {
+    box-shadow: 0px 6px 6px;
+}
+
+@mixin spinner-loader {
+    height: 100%;
+    position: fixed;
+    margin: auto;
+    top: 0; left: 0; right: 0; bottom: 0;
+    visibility: hidden;
+}
+
+@mixin button {
+    height: 65px;
+    color: $color_white;
+    font-size: 22px;
+    border-radius: 30px;
+    background: linear-gradient(170deg, $color_secondary, $color_primary);
+    box-shadow: 0px 6px 6px #c5c5c5;
+    border: none;
+}

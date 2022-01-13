@@ -1,0 +1,18 @@
+header figure {
+    text-align: center;
+    img {
+        margin-top: 10px;
+        width: 200px;
+    }
+}
+
+header {
+    position: relative;
+    .fa-arrow-left {
+        position: absolute;
+        font-size: 25px;
+        top: 15px;
+        left: 30px;
+        color: $color_grey_dark;
+    }
+}
