@@ -603,7 +603,8 @@ footer li:nth-child(2) i {
   }
 
   .menu h2 {
-    margin-left: 280px;
+    margin: auto;
+    max-width: 800px;
   }
 }
 
