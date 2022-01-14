@@ -25,6 +25,16 @@
     }
 }
 
+@keyframes rotations {
+    0% {
+        visibility: visible;
+    }
+    100% {
+        transform: rotate(360deg);
+        visibility: visible;
+    }
+}
+
 @keyframes menu {
     0% {
         opacity: 0;

@@ -54,6 +54,15 @@ body {
     opacity: 0;
   }
 }
+@keyframes rotations {
+  0% {
+    visibility: visible;
+  }
+  100% {
+    transform: rotate(360deg);
+    visibility: visible;
+  }
+}
 @keyframes menu {
   0% {
     opacity: 0;
@@ -564,7 +573,7 @@ footer li:nth-child(2) i {
   transition: 0.5s ease-in-out;
 }
 .menu__plat--card:hover .fa-check-circle {
-  animation: spinner 0.5s ease-in-out;
+  animation: rotations 0.5s ease-in-out;
 }
 .menu__plat--card:hover .text_prix {
   width: calc(100% - 65px);

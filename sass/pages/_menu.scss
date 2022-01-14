@@ -137,7 +137,7 @@
             transition: 0.5s ease-in-out;
         }
         &:hover .fa-check-circle {
-            animation: spinner 0.5s ease-in-out;
+            animation: rotations 0.5s ease-in-out;
         }
         &:hover .text_prix {
             width: calc(100% - 65px);
