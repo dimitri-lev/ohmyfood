@@ -170,7 +170,7 @@
             right: 15px;
         }
     }
-    .restaurant__text {
+    &--text {
         text-align: left;
         font-size: 24px;
         position: relative;
@@ -215,7 +215,7 @@
         top: 30px;
         opacity: 1;
     }
-    .restaurant__titre {
+    &--titre {
         display: flex;
         margin-bottom: 2px;
     }

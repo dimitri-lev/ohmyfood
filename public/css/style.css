@@ -334,12 +334,12 @@ footer li:nth-child(2) i {
   top: 0px;
   right: 15px;
 }
-.restaurant__card .restaurant__text {
+.restaurant__card--text {
   text-align: left;
   font-size: 24px;
   position: relative;
 }
-.restaurant__card .restaurant__text h3 {
+.restaurant__card--text h3 {
   font-weight: 700;
   margin: 0;
   margin-top: 20px;
@@ -347,7 +347,7 @@ footer li:nth-child(2) i {
   margin-left: 30px;
   font-size: 22px;
 }
-.restaurant__card .restaurant__text p {
+.restaurant__card--text p {
   margin: 0;
   margin-left: 30px;
   font-size: 20px;
@@ -377,7 +377,7 @@ footer li:nth-child(2) i {
   top: 30px;
   opacity: 1;
 }
-.restaurant__card .restaurant__titre {
+.restaurant__card--titre {
   display: flex;
   margin-bottom: 2px;
 }
