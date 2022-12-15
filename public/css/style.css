@@ -21,11 +21,11 @@ a {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .menu__titre h1 {
-  font-family: "Shrikhand", cursive;
+  font-family: 'Shrikhand', cursive;
 }
 
 @keyframes spin {
@@ -76,7 +76,7 @@ body {
   color: #fff;
   font-size: 22px;
   border-radius: 30px;
-  background: linear-gradient(170deg, #FF79DA, #9356DC);
+  background: linear-gradient(170deg, #ff79da, #9356dc);
   box-shadow: 0px 6px 6px #c5c5c5;
   border: none;
   margin-top: 20px;
@@ -95,7 +95,7 @@ body {
   color: #fff;
   font-size: 22px;
   border-radius: 30px;
-  background: linear-gradient(170deg, #FF79DA, #9356DC);
+  background: linear-gradient(170deg, #ff79da, #9356dc);
   box-shadow: 0px 6px 6px #c5c5c5;
   border: none;
   width: 300px;
@@ -178,8 +178,8 @@ footer li:nth-child(2) i {
   justify-content: center;
   align-items: center;
   border: 10px solid transparent;
-  border-top: 10px solid #9356DC;
-  border-bottom: 10px solid #FF79DA;
+  border-top: 10px solid #9356dc;
+  border-bottom: 10px solid #ff79da;
   border-radius: 50%;
   width: 100px;
   height: 100px;
@@ -199,7 +199,7 @@ footer li:nth-child(2) i {
   flex-direction: column;
 }
 .lieu::before {
-  content: "";
+  content: '';
   height: 6px;
   background: linear-gradient(#cecece, #eaeaea);
 }
@@ -370,7 +370,7 @@ footer li:nth-child(2) i {
   transition: 0.3s ease-in-out;
 }
 .restaurant__card .fas.fa-heart {
-  background: linear-gradient(170deg, #FF79DA, #9356DC);
+  background: linear-gradient(170deg, #ff79da, #9356dc);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 0;
@@ -467,7 +467,7 @@ footer li:nth-child(2) i {
   transition: 0.3s ease-in-out;
 }
 .menu .fas.fa-heart {
-  background: linear-gradient(170deg, #FF79DA, #9356DC);
+  background: linear-gradient(170deg, #ff79da, #9356dc);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 0;
@@ -492,10 +492,10 @@ footer li:nth-child(2) i {
   flex-direction: column;
 }
 .menu h2::after {
-  content: "";
+  content: '';
   height: 3px;
   width: 40px;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -593,7 +593,8 @@ footer li:nth-child(2) i {
 }
 
 @media (max-width: 360px) {
-  .menu__titre .far.fa-heart, .menu__titre .fas.fa-heart {
+  .menu__titre .far.fa-heart,
+  .menu__titre .fas.fa-heart {
     top: 80px;
   }
 }
